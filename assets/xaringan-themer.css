@@ -59,8 +59,9 @@
   --inverse-background-color: #005C84;
   --inverse-header-color: #FFFFFF;
   --inverse-link-color: #FFFFFF;
-  --title-slide-background-color: #1381B0;
+  --title-slide-background-color: #005C84;
   --title-slide-text-color: #FFFFFF;
+  --title-slide-link-color: white;
   --header-background-color: #1381B0;
   --header-background-text-color: #FFFFFF;
   --primary: #FFFFFF;
@@ -68,6 +69,40 @@
   --white: #FFFFFF;
   --black: #000000;
 }
+
+/************************************
+
+University of Southampton Template
+Alistair Bailey
+17th December 2018
+
+Split-Complement Colours for slide 
+colours are:
+
+Marine 1, Horizon 1 and Horizon 2
+
+*************************************/
+
+/* Marine Colours are defined by the          */
+/* UoS Marine Branding Color Palette */
+/* https://www.southampton.ac.uk/brand/category/colour/ */
+.marine-1 {color: #005C84;}
+.marine-2 {color: #74C9E5;}
+.marine-3 {color: #3CBAC6;}
+.marine-4 {color: #B3DBD2;}
+.marine-5 {color: #4BB694;}
+.marine-6 {color: #C1D100;}
+
+/* Horizon Colours are defined by the          */
+/* UoS Horizon Branding Color Palette */
+/* https://www.southampton.ac.uk/brand/category/colour/ */
+.horizon-1 { color: #FCBC00; }
+.horizon-2 { color: #EF7D00; }
+.horizon-3 { color: #E73037; }
+.horizon-4 {color: #D5007F;}
+.horizon-5 { color: #8D3970;}
+
+.neutral {color: #495961;}
 
 html {
   font-size: var(--base-font-size);
@@ -142,11 +177,20 @@ a, a > code {
 .inverse a, .inverse a > code {
   color: var(--inverse-link-color);
 }
+
+.title-slide a, .title-slide a > code {
+  color: var(--title-slide-link-color);
+  
+}
+
 .title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
   color: var(--title-slide-text-color);
 }
 .title-slide {
   background-color: var(--title-slide-background-color);
+  background-image: url(https://raw.githubusercontent.com/ab604/ab604.github.io/master/docs/uos-logo-white.png);
+	background-position: left 20px top 20px;
+	background-size: 23%;
 }
 .title-slide .remark-slide-number {
   display: none;
